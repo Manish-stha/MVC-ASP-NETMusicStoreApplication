@@ -27,7 +27,7 @@ namespace MusicApplication.Controllers
         //Get: /Store/Details
         public ActionResult Details(int id)
         {
-            var album = new Album { Title = "Album" + id };
+            var album = storeDB.Albums.Find(id);
             return View(album);
         }
 
@@ -35,7 +35,9 @@ namespace MusicApplication.Controllers
 
         public ActionResult Browse(string genre)
         {
-            var genreModel = new Genre { Name = genre };
+            var genreModel = storeDB.Genres.Include("Albums")
+                .Single(g => g.Name == genre);
+
             return View(genreModel);
         }
     }
