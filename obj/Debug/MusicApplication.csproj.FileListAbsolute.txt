@@ -85,7 +85,6 @@ C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\Microsoft.AI
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\Microsoft.AI.Web.xml
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\intern2\source\repos\MusicApplication\MusicApplication\obj\Debug\MusicApplication.csprojAssemblyReference.cache
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\obj\Debug\MusicApplication.csproj.CoreCompileInputs.cache
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\obj\Debug\MusicApplication.csproj.CopyComplete
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\obj\Debug\MusicApplication.dll
@@ -133,3 +132,4 @@ C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\log4net.xml
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\NHibernate.xml
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\Remotion.Linq.xml
 C:\Users\intern2\source\repos\MusicApplication\MusicApplication\bin\Remotion.Linq.EagerFetching.xml
+C:\Users\intern2\source\repos\MusicApplication\MusicApplication\obj\Debug\MusicApplication.csprojAssemblyReference.cache

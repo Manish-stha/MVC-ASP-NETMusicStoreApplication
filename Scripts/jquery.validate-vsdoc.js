@@ -1,10 +1,10 @@
-﻿/*
+/*
 * This file has been commented to support Visual Studio Intellisense.
 * You should not use this file at runtime inside the browser--it is only
 * intended to be used only for design-time IntelliSense.  Please use the
 * standard jQuery library for all production use.
 *
-* Comment version: 1.17.0
+* Comment version: 1.8
 */
 
 /*
@@ -15,9 +15,12 @@
 * for informational purposes only and are not the license terms under
 * which Microsoft distributed this file.
 *
-* jQuery Validation Plugin - v1.17.0 - 12/5/2016
-* https://github.com/jzaefferer/jquery-validation
-* Copyright (c) 2013 Jörn Zaefferer; Licensed MIT
+* jQuery validation plugin 1.8.0
+*
+* http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+* http://docs.jquery.com/Plugins/Validation
+*
+* Copyright (c) 2006 - 2011 Jörn Zaefferer
 *
 */
 
@@ -32,9 +35,10 @@ $.extend($.fn, {
 		/// elements. Each one can be disabled, see the onxxx options (onsubmit, onfocusout,
 		/// onkeyup, onclick). focusInvalid focuses elements when submitting a invalid form.
 		/// </summary>
-		/// <param name="options" type="Object">
+		/// <param name="options" type="Options">
 		/// A set of key/value pairs that configure the validate. All options are optional.
 		/// </param>
+		/// <returns type="Validator" />
 
 		// if nothing is selected, return nothing; can't chain anyway
 		if (!this.length) {
@@ -134,6 +138,7 @@ $.extend($.fn, {
 		/// <param name="attributes" type="String">
 		/// A space-seperated list of attribute names to remove.
 		/// </param>
+		/// <returns type="" />
 
 		var result = {},
 			$element = this;
@@ -154,6 +159,7 @@ $.extend($.fn, {
 		/// <param name="argument" type="">
 		/// A list of rules to add or remove.
 		/// </param>
+		/// <returns type="" />
 
 		var element = this[0];
 		
@@ -310,6 +316,7 @@ $.extend($.validator, {
 		/// <param name="settings" type="Options">
 		/// Options to set as default.
 		/// </param>
+		/// <returns type="undefined" />
 
 		$.extend( $.validator.defaults, settings );
 	},
@@ -436,6 +443,7 @@ $.extend($.validator, {
 			/// <param name="errors" type="Object">
 			/// One or more key/value pairs of input names and messages.
 			/// </param>
+			/// <returns type="undefined" />
 
 			if(errors) {
 				// add items to error list and map
@@ -464,6 +472,7 @@ $.extend($.validator, {
 			/// Resets input fields to their original value (requires form plugin), removes classes
 			/// indicating invalid elements and hides error messages.
 			/// </summary>
+			/// <returns type="undefined" />
 
 			if ( $.fn.resetForm )
 				$( this.currentForm ).resetForm();
@@ -863,6 +872,7 @@ $.extend($.validator, {
 		/// <param name="rules" type="Options">
 		/// The compound rules
 		/// </param>
+		/// <returns type="undefined" />
 
 		className.constructor == String ?
 			this.classRuleSettings[className] = rules :
@@ -1012,6 +1022,7 @@ $.extend($.validator, {
 		/// jQuery.validator.format(value). When undefined, an already existing message is used 
 		/// (handy for localization), otherwise the field-specific messages have to be defined.
 		/// </param>
+		/// <returns type="undefined" />
 
 		$.validator.methods[name] = method;
 		$.validator.messages[name] = message != undefined ? message : $.validator.messages[name];
